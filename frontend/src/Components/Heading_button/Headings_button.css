@@ -1,0 +1,120 @@
+.Headings_Button_Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 2vw;
+    padding-right: 9.02%;
+    
+}
+.Headings_Button_Container .Section_Headings {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2vh;
+    align-items: left;
+    padding-left: 9.02%;
+    width: 75vw;
+}
+.Headings_Button_Container .Section_Headings > p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', 'Poppins', sans-serif;
+}
+.Headings_Button_Container .Section_Headings .large_heading {
+    width: max-content;
+    font-weight: bold;
+    font-size: 2.3vw;
+    line-height: 3.1vw;
+    color: #1b2733;
+}
+.Headings_Button_Container .Section_Headings .small_heading {
+    width: max-content;
+    font-weight: 600;
+    font-size: 1.11vw;
+    line-height: 1.53vw;
+    color: #637282;
+}
+.Headings_Button_Container .Button {
+    height: max-content;
+	width: max-content;
+	transition: 0.75s;
+	display: grid;
+	place-items: center;
+	outline: none;
+	border: none;
+	border-radius: 0.6vh;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+.Headings_Button_Container .Button > a {
+    margin: 0;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 150%;
+	padding: 12px 28px;
+    width: 100%;
+	letter-spacing: 0.02em;
+	z-index: 1;
+	font-family: "Open Sans";
+}
+.Headings_Button_Container .Button > img {
+    height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+    object-fit: cover;
+}
+.Headings_Button_Container .Button:hover {
+	box-shadow: 0px 1px 12px 0 rgba(0, 0, 0, 0.4);
+}
+@media only screen and (max-width: 900px) {
+    .Headings_Button_Container {
+        flex-direction: column;
+        gap: 4vh;
+        width: 90%;
+        padding-left: 10vw;
+        padding-right: 5vw;
+    }
+    .Headings_Button_Container .Section_Headings {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+        gap: 2vh;
+    }
+    .Headings_Button_Container .Section_Headings .large_heading {
+        font-size: 4vh;
+        line-height: 120%;
+        width: 100%;
+        text-align: left;
+    }
+    .Headings_Button_Container .Section_Headings .small_heading {
+        text-align: left;
+        width: 100%;
+        font-size: 3vh;
+        line-height: 150%;
+    }
+    .Headings_Button_Container .Button {
+        display: flex;
+        justify-content: center;
+    }
+    .Headings_Button_Container .Button a {
+        font-size: 11px;
+		padding: 10px 18px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .Headings_Button_Container .Section_Headings .large_heading {
+        font-size: 28px;
+    }
+    .Headings_Button_Container .Section_Headings .small_heading {
+        font-size: 16px;
+    }
+    .Headings_Button_Container .Button a {
+        font-size: 11px;
+		padding: 10px 18px;
+    }
+}
