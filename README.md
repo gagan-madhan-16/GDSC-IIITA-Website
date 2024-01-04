@@ -22,10 +22,11 @@ This Project includes a tech stack of Front end and Back end Development.:cop:
 
 
 ## To run locally - 
+Clone this repository to your machine
+Install and change active node version to v16.20.2
 ```bash
-$ git clone https://github.com/Elevate-Lab/GDSC-IIIT-A-Community-Website.git
-$ cd backend
+$ cd frontend
 $ npm i
-$ node app.js
+$ npm start
 ```
 Navigate to `localhost:3000` on your Browser.
