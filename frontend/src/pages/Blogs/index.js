@@ -8,7 +8,8 @@ import "./Blogs.css";
 import blog_illustration from "../../Assets/Blogs_page_illustration.svg";
 import Fab from "@mui/material/Fab";
 import AddIcon from "@mui/icons-material/Add";
-
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import BlogCard from "./BlogCard";
 import imag from "./thankyou.jpg";
 import Box from "@mui/material/Box";
@@ -22,10 +23,70 @@ import styles from "./BlogCard.module.css";
 import image1 from "../../Assets/Images/img1.png";
 import { useState } from "react";
 import { ReactComponent as ViewProject } from "../../Assets/svg_link.svg";
-import HeadingButton from "../../Components/Heading_button";
-import FormBtnBg from "../../Assets/Form_btns_bg.png";
-
+import CardMedia from "@mui/material/CardMedia";
 import MustReadCard from "../../Components/mustReadCard";
+import "./index.css";
+
+
+const postsdata = [
+  {
+    title: "Learn Microinteraction",
+    body: "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Ornare pretium placerat ut platea. Purus blandit integer sagittis massa vel est hac.",
+    date: "April 20 , 2023",
+    name: "John Doe",
+    profileImage: "https://i.pravatar.cc/202",
+    image: "https://picsum.photos/200/300",
+  },
+  {
+    title: "Learn Microinteraction",
+    body: "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Ornare pretium placerat ut platea. Purus blandit integer sagittis massa vel est hac.",
+    date: "Jan 20 , 2023",
+    name: "Jane Doe",
+    profileImage: "https://i.pravatar.cc/200",
+    image: "https://picsum.photos/200/300",
+  },
+  {
+    title: "Learn Microinteraction",
+    body: "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Ornare pretium placerat ut platea. Purus blandit integer sagittis massa vel est hac.",
+    date: "May 2 , 2023",
+    name: "Walter white",
+    profileImage: "https://i.pravatar.cc/201",
+    image: "https://picsum.photos/200/300",
+  },
+  {
+    title: "Learn Microinteraction",
+    body: "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Ornare pretium placerat ut platea. Purus blandit integer sagittis massa vel est hac.",
+    date: "December 4 , 2023",
+    name: "Walter white",
+    profileImage: "https://i.pravatar.cc/203",
+    image: "https://picsum.photos/200/300",
+  },
+];
+
+const responsive = {
+  superLargeDesktop: {
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 960, min: 680 },
+    items: 2,
+  },
+  LargeMobile: {
+    breakpoint: { max: 680, min: 464 },
+    items: 1,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
+
+
 
 function Blogs() {
 	const context = useContext(apiContext);
@@ -168,6 +229,7 @@ function Blogs() {
           </h2>
         </div>
         <MustReadCard />
+
         <div className="heading_plusBtn">
           <h2
             style={{
@@ -181,125 +243,119 @@ function Blogs() {
             All Blogs
           </h2>
         </div>
-        {/*         <div
-          style={{
-            padding: "0vh 5vw 0vh 5vw",
-            display: "flex",
-            flexDirection: "row",
-            flexWrap: "wrap",
-            justifyContent: "space-around",
-          }}
+        <Carousel
+          additionalTransfrom={0}
+          arrows={false}
+          className="car"
+          renderButtonGroupOutside={false}
+          autoPlay={true}
+          autoPlaySpeed={2000}
+          centerMode={false}
+          containerClass="container-with-dots"
+          dotListClass=""
+          responsive={responsive}
+          transitionDuration={500}
+          focusOnSelect={false}
+          infinite
+          itemClass=""
+          keyBoardControl
+          renderArrowsWhenDisabled={false}
+          renderDotsOutside={false}
         >
-          {blogs &&
-            blogs.map((blog) => {
-              return <BlogCard key={blog._id} blogs={blog} />;
-            })}
-        </div> */}
-{/*         <div
-          style={{
-            minHeight: "100vh",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <Grid
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-              alignItems: "center",
-              marginLeft: "-10px",
-            }}
-            container
-          >
-            <Grid
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              item
-            >
-              <DSBlogCard
-                title="Learn Microinteraction"
-                body="Lorem ipsum dolor sit amet, 
-                consectetur adipiscing elit. Ornare 
-                pretium placerat ut platea. Purus 
-                blandit integer sagittis massa vel est hac."
-                date="Monday Jan 20 , 2023"
-              />
-            </Grid>
-            <Grid
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              item
-            >
-              <DSBlogCard
-                title="Learn Microinteraction"
-                body="Lorem ipsum dolor sit amet, 
-                consectetur adipiscing elit. Ornare 
-                pretium placerat ut platea. Purus 
-                blandit integer sagittis massa vel est hac."
-                date="Monday Jan 20 , 2023"
-              />
-            </Grid>
-            <Grid
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              item
-            >
-              <DSBlogCard
-                title="Learn Microinteraction"
-                body="Lorem ipsum dolor sit amet, 
-                consectetur adipiscing elit. Ornare 
-                pretium placerat ut platea. Purus 
-                blandit integer sagittis massa vel est hac."
-                date="Monday Jan 20 , 2023"
-              />
-            </Grid>
-          </Grid>
-        </div>
-        <HeadingButton
-          LargeHeading="Interested in submitting your blog?"
-          SmallHeading="Just drop us your Proposal."
-          bg={FormBtnBg}
-          btnText="Submit Blog"
-          formLink="https://docs.google.com/forms/d/e/1FAIpQLSdInkvrM-KeM4P3m26wi-x73ftRT8Q32-632aL4yIWBYjfyYw/viewform?usp=sf_link"
-        /> */}
-{/*         <div className="heading_plusBtn">
-          <h2 style={{ fontWeight: "620" }} className="heading">
-            Featured Blogs
-          </h2>
-          <Fab color="primary" aria-label="add">
-            <Link
-              to="Blogs/NewBlog"
-              style={{
-                color: "white",
-                height: "100%",
-                width: "100%",
-                margin: "0",
-                display: "grid",
-                placeItems: "center",
-              }}
-            >
-              <AddIcon />
-            </Link>
-          </Fab>
-        </div> */}
+          {postsdata.map((news, index) => (
+            <div>
+              <Card
+                sx={{
+                  maxWidth: 300,
+                  borderRadius: 3,
+                  marginLeft: 4,
+                  marginRight: 4,
+                }}
+              >
+                <CardMedia
+                  sx={{
+                    height: 140,
+                    borderRadius: 2,
+                    margin: 2,
+                    objectFit: "cover",
+                  }}
+                  image={news.image}
+                  title="news thumbnail"
+                />
+                <CardContent>
+                  <Typography
+                    gutterBottom
+                    variant="h6"
+                    marginTop={-2.5}
+                    fontWeight={"bold"}
+                    fontSize={16}
+                    sx={{
+                      color: "#3E3232",
+                      whiteSpace: "nowrap",
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
+                    }}
+                  >
+                    {news.title}
+                  </Typography>
 
+                  <Typography
+                    variant="body2"
+                    fontSize={12}
+                    sx={{
+                      color: "#3E3232",
+                      opacity: 0.75,
+                      textOverflow: "ellipsis",
+                    }}
+                  >
+                    {news.body}
+                  </Typography>
+                </CardContent>
+                <Card
+                  sx={{
+                    maxWidth: 340,
+                    marginTop: 0,
+                    marginLeft: 2,
+                    marginRight: 2,
+                    marginBottom: 2,
+                    borderRadius: 2,
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    backgroundColor: "#F5F5F5",
+                    boxShadow: "none",
+                  }}
+                >
+                  <Avatar
+                    src={news.profileImage}
+                    sx={{ margin: 1, borderRadius: 3 }}
+                  />
 
-
+                  <div style={{}}>
+                    <Typography
+                      sx={{
+                        fontFamily: "Roboto",
+                        marginBottom: 0.1,
+                        fontSize: 14,
+                        fontWeight: 550,
+                        color: "#3E3232",
+                      }}
+                    >
+                      {news.name}
+                    </Typography>
+                    <Typography
+                      fontSize={11}
+                      color={"#3E3232"}
+                      sx={{ opacity: 0.75 }}
+                    >
+                      {news.date}
+                    </Typography>
+                  </div>
+                </Card>
+              </Card>
+            </div>
+          ))}
+        </Carousel>
       </section>
     </>
   );
