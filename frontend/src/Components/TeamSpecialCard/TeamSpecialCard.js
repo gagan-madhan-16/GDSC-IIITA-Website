@@ -26,7 +26,8 @@ function TeamSpecialCard() {
               <div className={styles.container}>
                 <div className={styles.img}>
                   <Avatar
-                    src=""
+                    src="https://drive.google.com/uc?export=view&id=1qr78jtZHlRme4ptgx6LSmPSwKpUCrGRX"
+                    //
                     sx={{ width: 140, height: 140 }}
                   />
                 </div>
@@ -66,28 +67,18 @@ function TeamSpecialCard() {
                     }}
                     color="#637282"
                     gutterTop
-                  >
-                    
-                  </Typography>
+                  ></Typography>
                 </div>
                 <div className={styles.social_icons}>
-                  <a
-                    href="https://"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  <a href="https://" target="_blank" rel="noreferrer">
                     <Twitter width="25px" />
                   </a>
                   {/* <a href="" className="fa fa-facebook" aria-hidden="true" target="_blank" width="px"></a> */}
-                  <a
-                    href="https://"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  <a href="https://" target="_blank" rel="noreferrer">
                     <Github width="25px" />
                   </a>
                   <a
-                    href="https://"
+                    href="https://www.linkedin.com/in/pratiksh-kumar-084314233/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -98,7 +89,7 @@ function TeamSpecialCard() {
             </CardContent>
           </Card>
         </Box>
-        
+
         <Box className={styles.card} sx={{ minWidth: 275 }}>
           <Card variant="outlined" style={{ borderRadius: 15 }}>
             <CardContent>
@@ -164,7 +155,6 @@ function TeamSpecialCard() {
             </CardContent>
           </Card>
         </Box>
-
       </div>
     );
 }

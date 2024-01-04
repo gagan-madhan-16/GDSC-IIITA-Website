@@ -76,7 +76,11 @@ export default function CoLeadsCard() {
                 <a href="https://" target="_blank" rel="noreferrer">
                   <Github width="25px" />
                 </a>
-                <a href="https://" target="_blank" rel="noreferrer">
+                <a
+                  href="https://www.linkedin.com/in/ritesh-k-g/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Linkedin width="25px" />
                 </a>
               </div>
@@ -140,7 +144,7 @@ export default function CoLeadsCard() {
                 <a href="www.github.com">
                   <Github width="25px" />
                 </a>
-                <a href="www.linkedin.com">
+                <a href="https://www.linkedin.com/in/tushar-kumar-4522ba236/">
                   <Linkedin width="25px" />
                 </a>
               </div>
