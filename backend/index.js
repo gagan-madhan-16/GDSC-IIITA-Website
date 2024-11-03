@@ -24,11 +24,7 @@ app.use(cors());
 app.use(bodyParser.json({limit: "30mb",extended:true}))
 app.use(bodyParser.urlencoded({limit:"30mb",extended:true}))
 
-<<<<<<< HEAD
 const url = process.env.MONGODB_URI;
-=======
-const url = process.env.MONGODB_URI || 5000;
->>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
 
 /*mongoose.connect(url, {
     useNewUrlParser: true,
