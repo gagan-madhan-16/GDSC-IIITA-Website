@@ -20,7 +20,6 @@ import "./Team.css";
 import "bootstrap/dist/css/bootstrap.css";
 import FossWMember from "./FossWMemberCard";
 import AIMemberCard from "./AIMemberCard";
-import DevopsMemberCard from "./DevopsMemberCard"
 import DesignMemberCard from "./designMemberCard";
 import CCMemberCard from "./ccWingMemberCard";
 import AppMemberCard from "./AppMemberCard";

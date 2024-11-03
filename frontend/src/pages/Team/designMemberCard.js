@@ -27,7 +27,7 @@ const memberObject = [
   },
   {
     name: "Shalini Chongdar",
-    img: "",
+    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730644546/gdsc%20members/Design%20Wing/heqohzkqdc1j5lwfopzi.jpg",
     title: "Coordinator"
   },
   {

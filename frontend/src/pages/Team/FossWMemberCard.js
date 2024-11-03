@@ -27,7 +27,7 @@ const memberObject = [
   },
   {
     name: "Sugam Sareen",
-    img: "",
+    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730644669/gdsc%20members/Foss%20Wing/iwqbzkqeyp1gqlytepo4.jpg",
     title: "Coordinator"
   },
   {
