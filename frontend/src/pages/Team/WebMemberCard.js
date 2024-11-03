@@ -19,7 +19,6 @@ import { makeStyles } from "@material-ui/core/styles";
 //
 const memberObject = [
   {
-<<<<<<< HEAD
     name: "Harshal Gainer",
     img: "",
     title: "Coordinator"
@@ -63,31 +62,6 @@ const memberObject = [
     name: "Mokshe Jain",
     img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619695/gdsc%20members/Web%20Dev%20Wing/fs0lq7qt07dusacli4jm.jpg",
     title: "Member"
-=======
-    name: "Shaurya Jain",
-    id: "1yRKOZcxruDMeRyXbweDu5PADh-TEbQm2",
-    //https://drive.google.com/file/d//view?usp=drive_link
-  },
-  {
-    name: "Lavish Meena",
-    id: "1VbqR-bUDgPdUsls0aVP-0SHA5z-qSXuh",
-  },
-  {
-    name: "Shubham Gupta",
-    id: "1oQpz3JaJ6XBGKok0LfkOAJkeBApp0f5y",
-  },
-  {
-    name: "Parimal Amrutkar",
-    id: "19bcmE-7X7XVdT_1sZdOoCIQzWMznasxA",
-  },
-  {
-    name: "Vasu Singla",
-    id: "1OoE_kbLm9rS8MOiylPmRuM-wfA97xCH2",
-  },
-  {
-    name: "Anmol Sinha",
-    id: "1rSGBE8d8I5C6S6hSb3oiluTfk785TTJH",
->>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
   },
 ];
 const useStyles = makeStyles(theme => ({
@@ -101,38 +75,22 @@ const useStyles = makeStyles(theme => ({
     justifyContent:"center",
   }
 }));
-<<<<<<< HEAD
 function MediaCard({name,img,title}) {
-=======
-function MediaCard(props) {
->>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
   const classes = useStyles();
   return (
     <Box className={styles.card} sx={{ minWidth: 275 }}>
       <Card variant="outlined" style={{ borderRadius: 15 }}>
         <CardContent>
-<<<<<<< HEAD
           <div className={styles.container}>
             <div className={styles.img}>
               <Avatar
               src={img}
               // src={`https://drive.google.com/uc?export=view&id=${props.id}`}
-=======
-          {/* for centering content - className={classes.footer} */}
-          <div className={styles.container}>
-            <div className={styles.img}>
-              <Avatar
-              src={`https://drive.google.com/uc?export=view&id=${props.id}`}
->>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
                 sx={{
                   width: 120,
                   height: 120,
                   mb: 2,
-<<<<<<< HEAD
                 }}
-=======
-                }} /*  margin: "auto" for centering avatar */
->>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
               />
             </div>
             <div className={styles.name}>
@@ -149,11 +107,7 @@ function MediaCard(props) {
                 color="#1B2733"
                 gutterBottom
               >
-<<<<<<< HEAD
                 {name}
-=======
-                {props.name}
->>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
               </Typography>
               <Typography
                 sx={{
@@ -165,11 +119,7 @@ function MediaCard(props) {
                 color="#637282"
                 gutterBottom
               >
-<<<<<<< HEAD
                 {title}
-=======
-                Member
->>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
               </Typography>
             </div>
           </div>
@@ -189,11 +139,7 @@ export default function WebMemberCard() {
       >
         {memberObject.map((person, index) => (
           <Grid item xs={2} sm={4} md={4} key={index}>
-<<<<<<< HEAD
             <MediaCard name={person.name} img={person.img} title={person.title}></MediaCard>
-=======
-            <MediaCard name={person.name} id={person.id}></MediaCard>
->>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
           </Grid>
         ))}
       </Grid>
