@@ -18,11 +18,19 @@ import AddIcon from "@mui/icons-material/Add";
 import WebMemberCard from "./WebMemberCard";
 import "./Team.css";
 import "bootstrap/dist/css/bootstrap.css";
+<<<<<<< HEAD
 import FossWMember from "./FossWMemberCard";
 import AIMemberCard from "./AIMemberCard";
 import DevopsMemberCard from "./DevopsMemberCard"
 import DesignMemberCard from "./designMemberCard";
 import CCMemberCard from "./ccWingMemberCard";
+=======
+import SourceWMember from "./SourceWMemberCard";
+import AIMemberCard from "./AIMemberCard";
+import DevopsMemberCard from "./DevopsMemberCard"
+import DesignMemberCard from "./designMemberCard";
+import GamedMemberCard from "./gameDevMemberCard";
+>>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
 import AppMemberCard from "./AppMemberCard";
 import CoLeadsCard from "../../Components/TeamSpecialCard/CoLeadsCard";
 function Team() {
@@ -137,6 +145,7 @@ function Team() {
         <Accordion>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
+<<<<<<< HEAD
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
@@ -179,6 +188,8 @@ function Team() {
         <Accordion>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
+=======
+>>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
@@ -188,14 +199,18 @@ function Team() {
             <WebMemberCard />
           </AccordionDetails>
         </Accordion>
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
         <Accordion>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
+<<<<<<< HEAD
             <HeadingNew LargeHeading="AI/ML Wing" />
           </AccordionSummary>
           <AccordionDetails>
@@ -204,6 +219,15 @@ function Team() {
         </Accordion>
 
 
+=======
+            <HeadingNew LargeHeading="Source Wave" />
+          </AccordionSummary>
+          <AccordionDetails>
+            <SourceWMember />
+          </AccordionDetails>
+        </Accordion>
+
+>>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
         <Accordion>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -216,9 +240,49 @@ function Team() {
             <AppMemberCard />
           </AccordionDetails>
         </Accordion>
+<<<<<<< HEAD
 
 
         {/* <Accordion>
+=======
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <HeadingNew LargeHeading="Design Wing" />
+          </AccordionSummary>
+          <AccordionDetails>
+            <DesignMemberCard />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <HeadingNew LargeHeading="AI/ML Wing" />
+          </AccordionSummary>
+          <AccordionDetails>
+            <AIMemberCard />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <HeadingNew LargeHeading="GameDev Wing" />
+          </AccordionSummary>
+          <AccordionDetails>
+            <GamedMemberCard />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+>>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel2a-content"
@@ -229,8 +293,28 @@ function Team() {
           <AccordionDetails>
             <DevopsMemberCard />
           </AccordionDetails>
+<<<<<<< HEAD
         </Accordion> */}
       </div>
+=======
+        </Accordion>
+      </div>
+
+      {/* <HeadingNew LargeHeading="WebD Wing" />
+      <WebMemberCard /> */}
+      {/*       <HeadingNew LargeHeading="Source Wave" />
+      <SourceWMember /> */}
+      {/* <HeadingNew LargeHeading="AppD Wing" />
+      <AppMemberCard /> */}
+      {/*       <HeadingNew LargeHeading="Design Wing" />
+      <DesignMemberCard />
+      <HeadingNew LargeHeading="AI/ML Wing" />
+      <AIMemberCard />
+      <HeadingNew LargeHeading="Game Dev Wing" />
+      <GamedMemberCard />
+      <HeadingNew LargeHeading="DevOps and Cloud Computing Wing" />
+      <DevopsMemberCard /> */}
+>>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
     </div>
   );
 }

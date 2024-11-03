@@ -26,7 +26,11 @@ function TeamSpecialCard() {
               <div className={styles.container}>
                 <div className={styles.img}>
                   <Avatar
+<<<<<<< HEAD
                     src="https://res.cloudinary.com/duf0inrg6/image/upload/v1730633182/gdsc%20members/lead%20and%20colead/rdlhvuckbuynew5ntvef.jpg"
+=======
+                    src="https://drive.google.com/uc?export=view&id=1qr78jtZHlRme4ptgx6LSmPSwKpUCrGRX"
+>>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
                     //
                     sx={{ width: 140, height: 140 }}
                   />
@@ -44,7 +48,11 @@ function TeamSpecialCard() {
                     color="#1B2733"
                     gutterBottom
                   >
+<<<<<<< HEAD
                     Nandini Gupta
+=======
+                    Pratiksh Kumar
+>>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
                   </Typography>
                   <Typography
                     sx={{
@@ -78,7 +86,11 @@ function TeamSpecialCard() {
                     <Github width="25px" />
                   </a>
                   <a
+<<<<<<< HEAD
                     href="https://www.linkedin.com/in/nandini-gupta-92700a288/"
+=======
+                    href="https://www.linkedin.com/in/pratiksh-kumar-084314233/"
+>>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
                     target="_blank"
                     rel="noreferrer"
                   >

@@ -8,6 +8,10 @@ function WebTeam() {
     let attribute = "teams"
     useEffect(() => {
         getAttribute(null)
+<<<<<<< HEAD
+=======
+        // getAllData();
+>>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
         getAllTeamData();
     }, [parameter])
    
@@ -30,4 +34,7 @@ return (
 
 export default WebTeam
 
+<<<<<<< HEAD
     
+=======
+>>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc

@@ -7,35 +7,6 @@ import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
 import styles from "./memberCard.module.css";
 import { makeStyles } from "@material-ui/core/styles";
-<<<<<<< HEAD
-=======
-/* const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  ...theme.typography.body2,
-  padding: theme.spacing(2),
-  textAlign: "center",
-  color: theme.palette.text.secondary,
-}));
- */
-//drive.google.com/file/d//view?usp=share_link
-//
-const memberObject = [
-  {
-    name: "Pragati Mandal",
-    id: "1_HM83Aubl7WEZXgOyrfunLsfzOx9oKbn",
-    //https://drive.google.com/file/d//view?usp=drive_link
-  },
-  {
-    name: "Shalini Chongdar",
-    id: "1xG7uUjjHlk35pGHz-pTrXf43aoJ_SHSN",
-  },
-  {
-    name: "Rohith Nayak",
-    id: "1TkMlHUTgMpdkLlWXNHwAV_Uy4_qrfgOE",
-    //https://drive.google.com/file/d//view?usp=drive_link
-  },
-];
->>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
 const useStyles = makeStyles((theme) => ({
   appBar: {
     top: "auto",
@@ -47,49 +18,27 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
   },
 }));
-<<<<<<< HEAD
 
 const memberObject = [
   {
-    name: "Thota Siddhartha",
-    img: "",
-    title: "Coordinator"
+    name: "Nandini Gupta",
+    id: "1j6eeDaX50ifB-u2YCUtaa-peMSvsKgyA",
   },
   {
-    name: "Shalini Chongdar",
-    img: "",
-    title: "Coordinator"
+    name: "Abhay Upadhyay",
+    id: "1iEfG9eK_JHQiPMNLasesXsTJeM0dpPXP",
   },
   {
-    name: "Satyam Naman",
-    img: "",
-    title: "Member"
+    name: "Sugam Sareen",
+    id: "1wkGPOkMgqhMOYIQdG26HsJaqHIoavttZ",
+    //https://drive.google.com/file/d//view?usp=drive_link
   },
   {
-    name: "Mukund Narayan Jha",
-    img: "",
-    title: "Member"
+    name: "Kushal Bansal",
+    id: "",
   },
-  {
-    name: "Sree Navya",
-    img: "",
-    title: "Member"
-  },
-  {
-    name: "Priyanshi Maheshwari",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619444/gdsc%20members/Design%20Wing/wj8scohytrshoilf1rjl.jpg",
-    title: "Member"
-  },
-  {
-    name: "Krishika Mehta",
-    img: "",
-    title: "Member"
-  }
 ];
-function MediaCard({name,img,title}) {
-=======
 function MediaCard(props) {
->>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
   const classes = useStyles();
   return (
     <Box className={styles.card} sx={{ minWidth: 275 }}>
@@ -99,11 +48,7 @@ function MediaCard(props) {
           <div className={styles.container}>
             <div className={styles.img}>
               <Avatar
-<<<<<<< HEAD
-                src={img}
-=======
                 src={`https://drive.google.com/uc?export=view&id=${props.id}`}
->>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
                 sx={{
                   width: 120,
                   height: 120,
@@ -125,11 +70,7 @@ function MediaCard(props) {
                 color="#1B2733"
                 gutterBottom
               >
-<<<<<<< HEAD
-                {name}
-=======
                 {props.name}
->>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
               </Typography>
               <Typography
                 sx={{
@@ -141,11 +82,7 @@ function MediaCard(props) {
                 color="#637282"
                 gutterBottom
               >
-<<<<<<< HEAD
-                {title}
-=======
                 Member
->>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
               </Typography>
             </div>
           </div>
@@ -155,15 +92,9 @@ function MediaCard(props) {
   );
 }
 
-<<<<<<< HEAD
-export default function FossWMember() {
+export default function SourceWMember() {
   return (
     <Box sx={{ flexGrow: 1, width: 1035, m: 15,mt:-8,mb:6}}>
-=======
-export default function DesignMemberCard() {
-  return (
-    <Box sx={{ flexGrow: 1, width: 1035, m: 15, mt: -8, mb: 6 }}>
->>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
       <Grid
         container
         spacing={{ xs: 2, md: 3 }}
@@ -171,11 +102,7 @@ export default function DesignMemberCard() {
       >
         {memberObject.map((person, index) => (
           <Grid item xs={2} sm={4} md={4} key={index}>
-<<<<<<< HEAD
-            <MediaCard name={person.name} img={person.img} title = {person.title}></MediaCard>
-=======
             <MediaCard name={person.name} id={person.id}></MediaCard>
->>>>>>> d8dd41aaa23ea09e68f90121616e16431fb59ddc
           </Grid>
         ))}
       </Grid>
