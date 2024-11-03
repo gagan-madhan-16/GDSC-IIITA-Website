@@ -1,0 +1,10 @@
+*{
+  font-family: 'Open Sans','Poppins',sans-serif,'Montserrat';
+}
+p{
+  margin:0;
+  padding:0;
+}
+.App {
+  text-align: center;
+}

@@ -1,0 +1,176 @@
+.mustReadCard {
+	width: 80vw;
+	height: max-content;
+	align-self: center;
+	border-radius: 20px;
+	/* box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 12px; */
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	display: flex;
+	flex-direction: row;
+	transition: 0.75s;
+	background-color: #fafafa;
+}
+.mustReadCard:hover {
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 16px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #fafafa;
+	box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.16);
+	border-radius: 20px;
+	z-index: 5;
+	margin-left: -25px;
+	width: 55vw;
+	padding-left: 25px;
+}
+.imgContainer .img {
+	width: 25vw;
+	height: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+}
+.row2 {
+	padding: 0 16px;
+	justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 30px;
+}
+.text {
+	margin-bottom: 4vh;
+}
+.writer div p {
+	padding-left: 10px;
+	margin: 0;
+}
+.btn {
+	padding: 10px;
+	font-size: 13;
+	width: 90%;
+}
+
+.btn:hover {
+	color: #fff;
+	font-size: 15px !important;
+	transition: 0.15s;
+}
+
+.writer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.buttons {
+	height: 100%;
+	width: 20vw;
+	display: "flex";
+	flex-direction: "column";
+	align-items: "center";
+}
+.buttonsAdmin {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 100%;
+	padding: 0;
+	padding-top: 10px;
+}
+@media only screen and (max-width: 900px) {
+	.row2 {
+		padding: 0 5px;
+	}
+	.text {
+		padding: 5px;
+	}
+	.mustReadCard {
+		width: 80%;
+		/* height: vh; */
+	}
+	.btn {
+		padding: 7px;
+		font-size: 10;
+	}
+}
+@media only screen and (max-width: 750px) {
+	.mustReadCard {
+		flex-direction: column;
+		align-items: center;
+		height: 83vh;
+		width: 50vw;
+	}
+	.imgContainer .img {
+		width: 50vw;
+		height: 100%;
+		max-height: 200px;
+	}
+	.content {
+		width: 50vw;
+		text-align: center;
+		margin-left: 0px;
+		padding-left: 0px;
+		margin-top: -20px;
+		padding-top: 20px;
+		box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.16);
+	}
+	.row2 {
+		flex-direction: column;
+		align-items: center;
+	}
+	.writer {
+		padding-bottom: 15px;
+	}
+	.mustReadCard {
+		height: max-content;
+		padding-bottom: 20px;
+	}
+	.buttons {
+		width: 40vw;
+	}
+	.btn {
+		padding: 5px;
+		font-size: 8;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.imgContainer .img {
+		/* width: 320px; */
+		width: 100%;
+		height: 100%;
+		max-height: 200px;
+	}
+	.mustReadCard {
+		height: max-content;
+		padding-bottom: 10px;
+		width: 90%;
+		/* width: 320px; */
+	}
+	.content {
+		/* width: 320px; */
+		width: 100%;
+	}
+
+	.buttons {
+		/* width: 280px; */
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.mustReadCard {
+		height: max-content;
+		padding-bottom: 20px;
+	}
+	.btn {
+		padding: 5px;
+		font-size: 5;
+	}
+}
