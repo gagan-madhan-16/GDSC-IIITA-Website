@@ -1,7 +1,7 @@
 .cards_container {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content:space-around;
 	border-radius: 20px;
 	margin-top: -60px;
 }

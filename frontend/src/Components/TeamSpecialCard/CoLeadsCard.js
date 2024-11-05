@@ -26,7 +26,7 @@ export default function CoLeadsCard() {
             <div className={styles.container}>
               <div className={styles.img}>
                 <Avatar
-                  src="https://drive.google.com/uc?export=view&id=1QCrYrLg6zGR40otAssTpE2qlg6tQjzC6"
+                  src="https://res.cloudinary.com/duf0inrg6/image/upload/t_crop/gdsc%20members/lead%20and%20colead/yfrudwerlldnerblnof1.jpg"
                   sx={{ width: 140, height: 140 }}
                 />
               </div>
@@ -69,9 +69,9 @@ export default function CoLeadsCard() {
                 ></Typography>
               </div>
               <div className={styles.social_icons}>
-              <a href="https://www.twitter.com">
+              {/* <a href="https://www.twitter.com">
                   <Twitter width="25px" />
-                </a>
+                </a> */}
                 <a href="https://www.github.com">
                   <Github width="25px" />
                 </a>
@@ -94,7 +94,7 @@ export default function CoLeadsCard() {
             <div className={styles.container}>
               <div className={styles.img}>
                 <Avatar
-                  src="https://drive.google.com/uc?export=view&id=1J6A2A5rKNcIhpJt5zRAVIxk2-iWLPYJp"
+                  src="https://res.cloudinary.com/duf0inrg6/image/upload/v1730732383/gdsc%20members/lead%20and%20colead/d03kcz4btydtevxfszas.jpg"
                   sx={{ width: 140, height: 140 }}
                 />
               </div>
@@ -137,10 +137,10 @@ export default function CoLeadsCard() {
                 ></Typography>
               </div>
               <div className={styles.social_icons}>
-                <a href="https://www.twitter.com">
+                {/* <a href="https://www.twitter.com">
                   <Twitter width="25px" />
-                </a>
-                <a href="https://www.github.com">
+                </a> */}
+                <a href="https://github.com/tonyStark-jr">
                   <Github width="25px" />
                 </a>
                 <a href="https://www.linkedin.com/in/prakhar-shukla-py/">

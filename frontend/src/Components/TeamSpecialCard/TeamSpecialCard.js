@@ -70,11 +70,11 @@ function TeamSpecialCard() {
                   ></Typography>
                 </div>
                 <div className={styles.social_icons}>
-                  <a href="https://" target="_blank" rel="noreferrer">
+                  {/* <a href="https://" target="_blank" rel="noreferrer">
                     <Twitter width="25px" />
-                  </a>
+                  </a> */}
                   {/* <a href="" className="fa fa-facebook" aria-hidden="true" target="_blank" width="px"></a> */}
-                  <a href="https://" target="_blank" rel="noreferrer">
+                  <a href="https://github.com/Nandinig24" target="_blank" rel="noreferrer">
                     <Github width="25px" />
                   </a>
                   <a

@@ -50,7 +50,7 @@ const memberObject = [
   },
   {
     name: "Parth Chavan",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619457/gdsc%20members/Web%20Dev%20Wing/bnu3hn6s9xw31kvs0snv.png",
+    img: "https://res.cloudinary.com/duf0inrg6/image/upload/t_crop2/gdsc%20members/Web%20Dev%20Wing/bnu3hn6s9xw31kvs0snv.jpg",
     title: "Member"
   },
   {
@@ -131,18 +131,25 @@ function MediaCard({name,img,title}) {
 
 export default function WebMemberCard() {
   return (
-    <Box sx={{ flexGrow: 1 , width:1035,m:15,mt:-8,mb:6}}>
+    <Box sx={{ flexGrow: 1, width: '100%', m: 0, mt: -8, mb: 6, pl:5, overflow: 'hidden' }}>
       <Grid
         container
-        spacing={{ xs: 2, md: 3 }}
-        columns={{ xs: 4, sm: 8, md: 12 }}
+        spacing={2}
       >
         {memberObject.map((person, index) => (
-          <Grid item xs={2} sm={4} md={4} key={index}>
-            <MediaCard name={person.name} img={person.img} title={person.title}></MediaCard>
+          <Grid 
+            item 
+            xs={12}   // 1 box per row on extra-small screens
+            sm={6}    // 2 boxes per row on small screens
+            md={4}    // 3 boxes per row on medium screens
+            lg={3}    // 4 boxes per row on large screens
+            key={index}
+          > 
+            <MediaCard name={person.name} img={person.img} title={person.title} />
           </Grid>
         ))}
       </Grid>
     </Box>
   );
 }
+

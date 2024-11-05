@@ -24,6 +24,8 @@ import DesignMemberCard from "./designMemberCard";
 import CCMemberCard from "./ccWingMemberCard";
 import AppMemberCard from "./AppMemberCard";
 import CoLeadsCard from "../../Components/TeamSpecialCard/CoLeadsCard";
+import Box from '@mui/material/Box';
+
 function Team() {
 	const [showField, setshowField] = useState("CoreTeam");
 	const [admin, setAdmin] = useState(false);
@@ -139,7 +141,10 @@ function Team() {
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
-            <HeadingNew LargeHeading="Foss Wing" />
+            <Box sx={{ padding: '0px', marginBottom: '16px' }}>
+              <HeadingNew LargeHeading="Foss Wing" />
+            </Box>
+
           </AccordionSummary>
           <AccordionDetails>
             <FossWMember />
@@ -153,7 +158,9 @@ function Team() {
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
-            <HeadingNew LargeHeading="CC Wing" />
+            <Box sx={{ padding: '0px', marginBottom: '16px' }}>
+              <HeadingNew LargeHeading="CC Wing" />
+            </Box>
           </AccordionSummary>
           <AccordionDetails>
            <CCMemberCard />
@@ -167,7 +174,9 @@ function Team() {
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
-            <HeadingNew LargeHeading="Design Wing" />
+            <Box sx={{ padding: '0px', marginBottom: '16px' }}>
+              <HeadingNew LargeHeading="Design Wing" />
+            </Box>
           </AccordionSummary>
           <AccordionDetails>
            <DesignMemberCard />
@@ -181,7 +190,9 @@ function Team() {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <HeadingNew LargeHeading="WebD Wing" />
+            <Box sx={{ padding: '0px', marginBottom: '16px' }}>
+              <HeadingNew LargeHeading="WebD Wing" />
+            </Box>
           </AccordionSummary>
           <AccordionDetails>
             <WebMemberCard />
@@ -195,7 +206,9 @@ function Team() {
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
-            <HeadingNew LargeHeading="AI/ML Wing" />
+            <Box sx={{ padding: '0px', marginBottom: '16px' }}>
+              <HeadingNew LargeHeading="AI/ML Wing" />
+            </Box>
           </AccordionSummary>
           <AccordionDetails>
             <AIMemberCard />
@@ -209,7 +222,9 @@ function Team() {
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
-            <HeadingNew LargeHeading="AppD Wing" />
+            <Box sx={{ padding: '0px', marginBottom: '16px' }}>
+              <HeadingNew LargeHeading="AppD Wing" />
+            </Box>
           </AccordionSummary>
           <AccordionDetails>
             <AppMemberCard />

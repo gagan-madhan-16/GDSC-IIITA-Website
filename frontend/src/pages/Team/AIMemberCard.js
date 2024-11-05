@@ -27,7 +27,7 @@ const memberObject = [
   },
   {
     name: "Sumit Awasthi",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730638767/gdsc%20members/AI-ML%20Wing/joudd4i4imuzqiif6yrd.jpg",
+    img: "https://res.cloudinary.com/duf0inrg6/image/upload/t_crop3%60%60/gdsc%20members/AI-ML%20Wing/joudd4i4imuzqiif6yrd.jpg",
     title: "Coordinator"
   },
   {
@@ -47,7 +47,7 @@ const memberObject = [
   },
   {
     name: "Maskeen Singh",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619458/gdsc%20members/AI-ML%20Wing/bznbfaukghwsgtcupe3n.jpg",
+    img: "https://res.cloudinary.com/duf0inrg6/image/upload/t_crop5/gdsc%20members/AI-ML%20Wing/bznbfaukghwsgtcupe3n.jpg",
     title: "Member"
   },
   {
@@ -110,17 +110,24 @@ function MediaCard({name,img,title}) {
   );
 }
 
-export default function FossWMember() {
+export default function AIMemberCard() {
   return (
-    <Box sx={{ flexGrow: 1, width: 1035, m: 15,mt:-8,mb:6}}>
+    <Box sx={{ flexGrow: 1, width: '100%', m: 0, mt: -8, mb: 6, pl: 5, overflow: 'hidden' }}>
       <Grid
         container
-        spacing={{ xs: 2, md: 3 }}
-        columns={{ xs: 4, sm: 8, md: 12 }}
+        spacing={2}
+        columns={12}
       >
         {memberObject.map((person, index) => (
-          <Grid item xs={2} sm={4} md={4} key={index}>
-            <MediaCard name={person.name} img={person.img} title = {person.title}></MediaCard>
+          <Grid 
+            item 
+            xs={12}   // 1 box per row on extra-small screens
+            sm={6}    // 2 boxes per row on small screens
+            md={4}    // 3 boxes per row on medium screens
+            lg={3}    // 4 boxes per row on large screens
+            key={index}
+          > 
+            <MediaCard name={person.name} img={person.img} title={person.title} />
           </Grid>
         ))}
       </Grid>
