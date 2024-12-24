@@ -121,15 +121,15 @@ function Footer() {
 			<p className="footer_divider"></p>
 
 			<div className="footer_bot">
-				<p className="Copyright_line">&copy;2022 GDSC IIITA</p>
-				<div className="footer_LogIn">
+				<p className="Copyright_line">&copy;2024-25 GDG On Campus IIITA</p>
+				{/* <div className="footer_LogIn">
 					<div className="Login_Cont">
 						<div className="LogIn_icon_cont">
 							<img src={login_icon} alt="LogIn" />
 						</div>
 						<button className="logIn_status">{admin === true ? "Log Out" : "Log In"}</button>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

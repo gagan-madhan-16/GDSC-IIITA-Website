@@ -57,7 +57,7 @@ function Content() {
                 </p>
             </div>      
             <div className="carousel_the_real_deal" >
-                <EventsCarousel />
+                {/* <EventsCarousel /> */}
             </div>
         </div>
     )

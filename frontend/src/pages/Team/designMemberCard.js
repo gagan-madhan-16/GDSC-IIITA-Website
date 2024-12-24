@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
 const memberObject = [
   {
     name: "Thota Siddhartha",
-    img: "",
+    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1734981268/gdsc%20members/Design%20Wing/apnambdaxv0j8tfuhabu.jpg",
     title: "Coordinator"
   },
   {
@@ -30,31 +30,31 @@ const memberObject = [
     img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730644546/gdsc%20members/Design%20Wing/heqohzkqdc1j5lwfopzi.jpg",
     title: "Coordinator"
   },
-  {
-    name: "Satyam Naman",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730774176/gdsc%20members/Design%20Wing/dd2jsmcufkxyd1cen4le.jpg",
-    title: "Member"
-  },
-  {
-    name: "Mukund Narayan Jha",
-    img: "",
-    title: "Member"
-  },
-  {
-    name: "Sree Navya",
-    img: "",
-    title: "Member"
-  },
-  {
-    name: "Priyanshi Maheshwari",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619444/gdsc%20members/Design%20Wing/wj8scohytrshoilf1rjl.jpg",
-    title: "Member"
-  },
-  {
-    name: "Krishika Mehta",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730688907/gdsc%20members/Design%20Wing/pvl2hbknz3qugvnttppm.jpg",
-    title: "Member"
-  }
+  // {
+  //   name: "Satyam Naman",
+  //   img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730774176/gdsc%20members/Design%20Wing/dd2jsmcufkxyd1cen4le.jpg",
+  //   title: "Member"
+  // },
+  // {
+  //   name: "Mukund Narayan Jha",
+  //   img: "",
+  //   title: "Member"
+  // },
+  // {
+  //   name: "Sree Navya",
+  //   img: "",
+  //   title: "Member"
+  // },
+  // {
+  //   name: "Priyanshi Maheshwari",
+  //   img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619444/gdsc%20members/Design%20Wing/wj8scohytrshoilf1rjl.jpg",
+  //   title: "Member"
+  // },
+  // {
+  //   name: "Krishika Mehta",
+  //   img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730688907/gdsc%20members/Design%20Wing/pvl2hbknz3qugvnttppm.jpg",
+  //   title: "Member"
+  // }
 ];
 function MediaCard({name,img,title}) {
   const classes = useStyles();
@@ -110,12 +110,14 @@ function MediaCard({name,img,title}) {
   );
 }
 
-export default function DesignMemberCard() {
+export default function FossWMember() {
   return (
     <Box sx={{ flexGrow: 1, width: '100%', m: 0, mt: -8, mb: 6, pl: 5, overflow: 'hidden' }}>
       <Grid
         container
         spacing={2}
+        columns={12}
+        sx={{ display: 'flex', justifyContent: 'space-around' }} // Add flexbox styling here
       >
         {memberObject.map((person, index) => (
           <Grid 

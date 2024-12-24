@@ -22,39 +22,39 @@ const useStyles = makeStyles((theme) => ({
 const memberObject = [
   {
     name: "Maharshi Shailesh Bhesania",
-    img: "",
+    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1734966249/gdsc%20members/CC%20Wing/uphoz3pk3iuvmecy14ic.jpg",
     title: "Coordinator"
   },
   {
     name: "Sahitya Malay Ranjeetbhai",
-    img: "",
+    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1734966247/gdsc%20members/CC%20Wing/ljnukgeaqulvnavdbqna.jpg",
     title: "Coordinator"
   },
   {
     name: "Prajjawal Agrahari",
-    img: "",
+    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1734966253/gdsc%20members/CC%20Wing/pid0hjixmetectz0z8ui.jpg",
     title: "Coordinator"
   },
   {
     name: "Siddharth Bhikamchand Joshi",
-    img: "",
+    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1734966254/gdsc%20members/CC%20Wing/wolgiyyvgnlcszemxae6.jpg",
     title: "Coordinator"
   },
-  {
-    name: "Aaryan Kuntal",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619445/gdsc%20members/CC%20Wing/hraeuwyg6swdompqvo76.jpg",
-    title: "Member"
-  },
-  {
-    name: "Pranav Singh",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619447/gdsc%20members/CC%20Wing/mciyiabjh1rjsxehn7nf.jpg",
-    title: "Member"
-  },
-  {
-    name: "Ritesh Narayan Das",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619442/gdsc%20members/CC%20Wing/wid6kp5f5ocipoh1cf6p.jpg",
-    title: "Member"
-  }
+  // {
+  //   name: "Aaryan Kuntal",
+  //   img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619445/gdsc%20members/CC%20Wing/hraeuwyg6swdompqvo76.jpg",
+  //   title: "Member"
+  // },
+  // {
+  //   name: "Pranav Singh",
+  //   img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619447/gdsc%20members/CC%20Wing/mciyiabjh1rjsxehn7nf.jpg",
+  //   title: "Member"
+  // },
+  // {
+  //   name: "Ritesh Narayan Das",
+  //   img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619442/gdsc%20members/CC%20Wing/wid6kp5f5ocipoh1cf6p.jpg",
+  //   title: "Member"
+  // }
 ];
 function MediaCard({name,img,title}) {
   const classes = useStyles();
@@ -110,12 +110,14 @@ function MediaCard({name,img,title}) {
   );
 }
 
-export default function CCMemberCard() {
+export default function FossWMember() {
   return (
     <Box sx={{ flexGrow: 1, width: '100%', m: 0, mt: -8, mb: 6, pl: 5, overflow: 'hidden' }}>
       <Grid
         container
         spacing={2}
+        columns={12}
+        sx={{ display: 'flex', justifyContent: 'space-around' }} // Add flexbox styling here
       >
         {memberObject.map((person, index) => (
           <Grid 

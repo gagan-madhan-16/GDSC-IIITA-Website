@@ -33,7 +33,7 @@ function Hero() {
 					<img src={Herologo} alt="Hero Logo" />
 					<div className="hero-join-us">
 						<a
-							href="https://gdsc.community.dev/indian-institute-of-information-technology-allahabad-prayagraj/"
+							href="https://gdg.community.dev/gdg-on-campus-indian-institute-of-information-technology-allahabad-prayagraj-india/"
 							target="_blank"
 							rel="noopener noreferrer"
 						>

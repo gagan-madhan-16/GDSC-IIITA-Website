@@ -11,7 +11,7 @@ import "./styles.css"
 export default function EventsCarousel(){
     const settings = {
       className:"slicky_boi",
-      arrows:false,
+      arrows:true,
       dots: false,
       infinite: true,
       speed: 1300,

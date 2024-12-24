@@ -20,7 +20,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const memberObject = [
   {
     name: "Harshal Gainer",
-    img: "",
+    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1734965066/gdsc%20members/Web%20Dev%20Wing/btgdwh8temku0rrbpgok.jpg",
     title: "Coordinator"
   },
   {
@@ -30,39 +30,39 @@ const memberObject = [
   },
   {
     name: "Swaroop Dora",
-    img: "",
+    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619456/gdsc%20members/Web%20Dev%20Wing/nmnepyoktv5dgcdkxzyq.jpg",
     title: "Coordinator"
   },
   {
     name: "Shubham Gupta",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730631402/gdsc%20members/Web%20Dev%20Wing/v3rw1hjznfkvyyod7mv3.jpg",
+    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1734965061/gdsc%20members/Web%20Dev%20Wing/hrurcz6totjdnysu3epl.jpg",
     title: "Coordinator"
   },
-  {
-    name: "Pratham Jain",
-    img: "",
-    title: "Member"
-  },
-  {
-    name: "Vardaan Pahwa",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619441/gdsc%20members/Web%20Dev%20Wing/ue4svshlfcn1dmiaaryo.jpg",
-    title: "Member"
-  },
-  {
-    name: "Parth Chavan",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/t_crop2/gdsc%20members/Web%20Dev%20Wing/bnu3hn6s9xw31kvs0snv.jpg",
-    title: "Member"
-  },
-  {
-    name: "Gagan Madhan",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619455/gdsc%20members/Web%20Dev%20Wing/jty6cyjzdwg9tsxvcuky.jpg",
-    title: "Member"
-  },
-  {
-    name: "Mokshe Jain",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619695/gdsc%20members/Web%20Dev%20Wing/fs0lq7qt07dusacli4jm.jpg",
-    title: "Member"
-  },
+  // {
+  //   name: "Pratham Jain",
+  //   img: "",
+  //   title: "Member"
+  // },
+  // {
+  //   name: "Vardaan Pahwa",
+  //   img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619441/gdsc%20members/Web%20Dev%20Wing/ue4svshlfcn1dmiaaryo.jpg",
+  //   title: "Member"
+  // },
+  // {
+  //   name: "Parth Chavan",
+  //   img: "https://res.cloudinary.com/duf0inrg6/image/upload/t_crop2/gdsc%20members/Web%20Dev%20Wing/bnu3hn6s9xw31kvs0snv.jpg",
+  //   title: "Member"
+  // },
+  // {
+  //   name: "Gagan Madhan",
+  //   img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619455/gdsc%20members/Web%20Dev%20Wing/jty6cyjzdwg9tsxvcuky.jpg",
+  //   title: "Member"
+  // },
+  // {
+  //   name: "Mokshe Jain",
+  //   img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619695/gdsc%20members/Web%20Dev%20Wing/fs0lq7qt07dusacli4jm.jpg",
+  //   title: "Member"
+  // },
 ];
 const useStyles = makeStyles(theme => ({
   appBar: {
@@ -129,12 +129,14 @@ function MediaCard({name,img,title}) {
   );
 }
 
-export default function WebMemberCard() {
+export default function FossWMember() {
   return (
-    <Box sx={{ flexGrow: 1, width: '100%', m: 0, mt: -8, mb: 6, pl:5, overflow: 'hidden' }}>
+    <Box sx={{ flexGrow: 1, width: '100%', m: 0, mt: -8, mb: 6, pl: 5, overflow: 'hidden' }}>
       <Grid
         container
         spacing={2}
+        columns={12}
+        sx={{ display: 'flex', justifyContent: 'space-around' }} // Add flexbox styling here
       >
         {memberObject.map((person, index) => (
           <Grid 
@@ -152,4 +154,3 @@ export default function WebMemberCard() {
     </Box>
   );
 }
-

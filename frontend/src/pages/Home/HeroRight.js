@@ -1,5 +1,5 @@
 import React from 'react';
-// import heroright from './Hero_right.svg';
+import heroright from './Hero_right.svg';
 
 function HeroRight() {
     return(
@@ -10,7 +10,7 @@ function HeroRight() {
             }}>
         <object 
             type="image/svg+xml" 
-            // data={heroright} 
+            data={heroright} 
             style={{ 
                 zIndex: '-2',
                 position: 'absolute',

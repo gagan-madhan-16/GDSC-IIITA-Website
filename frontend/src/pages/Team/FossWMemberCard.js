@@ -22,34 +22,34 @@ const useStyles = makeStyles((theme) => ({
 const memberObject = [
   {
     name: "Kushal Bansal",
-    img: "",
+    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1734966541/gdsc%20members/Foss%20Wing/ikezdtyqunf8cpigylec.jpg",
     title: "Coordinator"
   },
   {
     name: "Sugam Sareen",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730644669/gdsc%20members/Foss%20Wing/iwqbzkqeyp1gqlytepo4.jpg",
+    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1734966687/gdsc%20members/Foss%20Wing/bk7su1lxcpdwla452neg.jpg",
     title: "Coordinator"
   },
-  {
-    name: "Harshit Tatwedi",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619452/gdsc%20members/Foss%20Wing/wm9hfhodm4ii2qxn5iv9.jpg",
-    title: "Member"
-  },
-  {
-    name: "Kanishk Sakarwar",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619447/gdsc%20members/Foss%20Wing/p4mbglbdccgowrdnpeml.jpg",
-    title: "Member"
-  },
-  {
-    name: "Sneha Rastogi",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/t_crop1/gdsc%20members/Foss%20Wing/rxgm11clhlbzqsturvcz.jpg",
-    title: "Member"
-  },
-  {
-    name: "Swarup Narkhede",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619452/gdsc%20members/Foss%20Wing/o9piiahifb3yuxxmkhjf.jpg",
-    title: "Member"
-  }
+  // {
+  //   name: "Harshit Tatwedi",
+  //   img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619452/gdsc%20members/Foss%20Wing/wm9hfhodm4ii2qxn5iv9.jpg",
+  //   title: "Member"
+  // },
+  // {
+  //   name: "Kanishk Sakarwar",
+  //   img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619447/gdsc%20members/Foss%20Wing/p4mbglbdccgowrdnpeml.jpg",
+  //   title: "Member"
+  // },
+  // {
+  //   name: "Sneha Rastogi",
+  //   img: "https://res.cloudinary.com/duf0inrg6/image/upload/t_crop1/gdsc%20members/Foss%20Wing/rxgm11clhlbzqsturvcz.jpg",
+  //   title: "Member"
+  // },
+  // {
+  //   name: "Swarup Narkhede",
+  //   img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619452/gdsc%20members/Foss%20Wing/o9piiahifb3yuxxmkhjf.jpg",
+  //   title: "Member"
+  // }
 ];
 function MediaCard({name,img,title}) {
   const classes = useStyles();
@@ -110,7 +110,9 @@ export default function FossWMember() {
     <Box sx={{ flexGrow: 1, width: '100%', m: 0, mt: -8, mb: 6, pl: 5, overflow: 'hidden' }}>
       <Grid
         container
-        // spacing={2}
+        spacing={2}
+        columns={12}
+        sx={{ display: 'flex', justifyContent: 'space-around' }} // Add flexbox styling here
       >
         {memberObject.map((person, index) => (
           <Grid 

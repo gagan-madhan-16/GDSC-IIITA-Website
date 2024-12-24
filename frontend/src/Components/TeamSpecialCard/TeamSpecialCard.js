@@ -26,7 +26,7 @@ function TeamSpecialCard() {
               <div className={styles.container}>
                 <div className={styles.img}>
                   <Avatar
-                    src="https://res.cloudinary.com/duf0inrg6/image/upload/v1730633182/gdsc%20members/lead%20and%20colead/rdlhvuckbuynew5ntvef.jpg"
+                    src="https://res.cloudinary.com/duf0inrg6/image/upload/v1734964914/gdsc%20members/lead%20and%20colead/csgd3bwo7zlh69wdtmb2.jpg"
                     //
                     sx={{ width: 140, height: 140 }}
                   />
@@ -96,7 +96,7 @@ function TeamSpecialCard() {
               <div className={styles.container}>
                 <div className={styles.img}>
                   <Avatar
-                    src="https://lh3.googleusercontent.com/a-/AOh14GhmfMmyuuFyOaa3KdvWFBX9qgCMiw8gN20B67tx8A=s400-p-k-no"
+                    src="https://res.cloudinary.com/duf0inrg6/image/upload/v1735037586/gdsc%20members/lead%20and%20colead/vtqo8t52v0jh7sajady7.jpg"
                     sx={{ width: 140, height: 140 }}
                   />
                 </div>

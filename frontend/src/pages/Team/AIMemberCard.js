@@ -22,39 +22,39 @@ const useStyles = makeStyles((theme) => ({
 const memberObject = [
   {
     name: "Pratham Pal",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730638703/gdsc%20members/AI-ML%20Wing/q6yctw3kxhxwpesocyxm.jpg",
+    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1734965360/gdsc%20members/AI-ML%20Wing/bdhbbknsjbiyfginwadiubo.jpg",
     title: "Coordinator"
   },
   {
     name: "Sumit Awasthi",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/t_crop3%60%60/gdsc%20members/AI-ML%20Wing/joudd4i4imuzqiif6yrd.jpg",
+    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1734965380/gdsc%20members/AI-ML%20Wing/mrg3sk84ma0cqoqbaqna.png",
     title: "Coordinator"
   },
-  {
-    name: "Priyam Jyoti Chakrabarty",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619439/gdsc%20members/AI-ML%20Wing/aqn4jsv2gzrufmdz8x3b.jpg",
-    title: "Member"
-  },
-  {
-    name: "Avaneesh Karthik S ",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619441/gdsc%20members/AI-ML%20Wing/mfmcdbniqo7udg7gvqnc.jpg",
-    title: "Member"
-  },
-  {
-    name: "V Sai Tejesh",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619459/gdsc%20members/AI-ML%20Wing/wupp63emtrnxgitw5ncu.jpg",
-    title: "Member"
-  },
-  {
-    name: "Maskeen Singh",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/t_crop5/gdsc%20members/AI-ML%20Wing/bznbfaukghwsgtcupe3n.jpg",
-    title: "Member"
-  },
-  {
-    name: "Ranjeet Kulkarni",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619441/gdsc%20members/AI-ML%20Wing/hizoh3tlpggqfnsx6glz.jpg",
-    title: "Member"
-  }
+  // {
+  //   name: "Priyam Jyoti Chakrabarty",
+  //   img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619439/gdsc%20members/AI-ML%20Wing/aqn4jsv2gzrufmdz8x3b.jpg",
+  //   title: "Member"
+  // },
+  // {
+  //   name: "Avaneesh Karthik S ",
+  //   img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619441/gdsc%20members/AI-ML%20Wing/mfmcdbniqo7udg7gvqnc.jpg",
+  //   title: "Member"
+  // },
+  // {
+  //   name: "V Sai Tejesh",
+  //   img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619459/gdsc%20members/AI-ML%20Wing/wupp63emtrnxgitw5ncu.jpg",
+  //   title: "Member"
+  // },
+  // {
+  //   name: "Maskeen Singh",
+  //   img: "https://res.cloudinary.com/duf0inrg6/image/upload/t_crop5/gdsc%20members/AI-ML%20Wing/bznbfaukghwsgtcupe3n.jpg",
+  //   title: "Member"
+  // },
+  // {
+  //   name: "Ranjeet Kulkarni",
+  //   img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619441/gdsc%20members/AI-ML%20Wing/hizoh3tlpggqfnsx6glz.jpg",
+  //   title: "Member"
+  // }
 ];
 function MediaCard({name,img,title}) {
   const classes = useStyles();
@@ -110,13 +110,14 @@ function MediaCard({name,img,title}) {
   );
 }
 
-export default function AIMemberCard() {
+export default function FossWMember() {
   return (
     <Box sx={{ flexGrow: 1, width: '100%', m: 0, mt: -8, mb: 6, pl: 5, overflow: 'hidden' }}>
       <Grid
         container
         spacing={2}
         columns={12}
+        sx={{ display: 'flex', justifyContent: 'space-around' }} // Add flexbox styling here
       >
         {memberObject.map((person, index) => (
           <Grid 

@@ -22,24 +22,24 @@ const useStyles = makeStyles((theme) => ({
 const memberObject = [
   {
     name: "Ankit Kumar",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730638293/gdsc%20members/App%20Dev%20Wing/lfaujzsfkgpxvosth5t3.jpg",
+    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1734966108/gdsc%20members/App%20Dev%20Wing/vnep68ghjsnpatvblggo.jpg",
     title: "Coordinator"
   },
   {
     name: "Himanshu Raj",
-    img: "",
+    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1734965953/gdsc%20members/App%20Dev%20Wing/qdoyurk7nm7ufqrf2mfe.jpg",
     title: "Coordinator"
   },
-  {
-    name: "Raman Bir Singh",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619445/gdsc%20members/App%20Dev%20Wing/xhe5puktrnfllyltvdi5.jpg",
-    title: "Member"
-  },
-  {
-    name: "Yojit Kapoor",
-    img: "https://res.cloudinary.com/duf0inrg6/image/upload/t_crop6/gdsc%20members/App%20Dev%20Wing/ha5u59e0chco4qzhcmro.jpg",
-    title: "Member"
-  }
+  // {
+  //   name: "Raman Bir Singh",
+  //   img: "https://res.cloudinary.com/duf0inrg6/image/upload/v1730619445/gdsc%20members/App%20Dev%20Wing/xhe5puktrnfllyltvdi5.jpg",
+  //   title: "Member"
+  // },
+  // {
+  //   name: "Yojit Kapoor",
+  //   img: "https://res.cloudinary.com/duf0inrg6/image/upload/t_crop6/gdsc%20members/App%20Dev%20Wing/ha5u59e0chco4qzhcmro.jpg",
+  //   title: "Member"
+  // }
 ];
 function MediaCard({name,img,title}) {
   const classes = useStyles();
@@ -95,12 +95,15 @@ function MediaCard({name,img,title}) {
   );
 }
 
-export default function AppMemberCard() {
+
+export default function FossWMember() {
   return (
     <Box sx={{ flexGrow: 1, width: '100%', m: 0, mt: -8, mb: 6, pl: 5, overflow: 'hidden' }}>
       <Grid
         container
         spacing={2}
+        columns={12}
+        sx={{ display: 'flex', justifyContent: 'space-around' }} // Add flexbox styling here
       >
         {memberObject.map((person, index) => (
           <Grid 

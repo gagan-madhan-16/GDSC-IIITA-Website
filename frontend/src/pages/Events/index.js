@@ -28,7 +28,7 @@ function Events() {
 				// paddingTop: "9vh",
 			}}
 		>
-			<CarouselComponent />
+			{/* <CarouselComponent /> */}
 			<Headings
 				LargeHeading="Events"
 				SmallHeading="Whats happening..."

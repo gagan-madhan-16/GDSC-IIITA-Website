@@ -3,6 +3,7 @@ import apiContext from "../../ContextApi/ApiContext";
 import { Link } from "react-router-dom";
 import DSBlogCard from "../../Components/DSBlogCard";
 import Headings from "../../Components/Page_headings";
+import HeadingButton from "../../Components/Heading_button";
 import { Grid } from "@material-ui/core";
 import "./Blogs.css";
 import blog_illustration from "../../Assets/Blogs_page_illustration.svg";
@@ -26,41 +27,54 @@ import { ReactComponent as ViewProject } from "../../Assets/svg_link.svg";
 import CardMedia from "@mui/material/CardMedia";
 import MustReadCard from "../../Components/mustReadCard";
 import "./index.css";
-
+import FormBtnBg from "../../Assets/Form_btns_bg.png";
 
 const postsdata = [
   {
-    title: "Learn Microinteraction",
-    body: "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Ornare pretium placerat ut platea. Purus blandit integer sagittis massa vel est hac.",
-    date: "April 20 , 2023",
-    name: "John Doe",
-    profileImage: "https://i.pravatar.cc/202",
-    image: "https://picsum.photos/200/300",
+    title: "Adobe GenSolve Hackathon ",
+    body: "Discover how Team FrYdAy from IIIT Allahabad created 'Curve Topia,' a groundbreaking tool that won Adobe GenSolve Hackathon 2024! Click to Read more",
+    date: "Nov 1 , 2024",
+    name: "Shubham Gupta",
+    profileImage: "https://res.cloudinary.com/duf0inrg6/image/upload/v1734965061/gdsc%20members/Web%20Dev%20Wing/hrurcz6totjdnysu3epl.jpg",
+    image: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*Ty8XflJrNULShAbDXSMFCg.png",
+    blog:"https://medium.com/nybles/adobe-gensolve-hackathon-fryday-all-india-winners-d426124ebf45",
   },
   {
-    title: "Learn Microinteraction",
-    body: "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Ornare pretium placerat ut platea. Purus blandit integer sagittis massa vel est hac.",
-    date: "Jan 20 , 2023",
-    name: "Jane Doe",
-    profileImage: "https://i.pravatar.cc/200",
-    image: "https://picsum.photos/200/300",
+    title: "Why Jetpack DataStore over SharedPreferences?",
+    body: "Discover why Jetpack DataStore is a superior, safer, and more efficient alternative to SharedPreferences for Android storage. Click to Read more",
+    date: "Apr 5 , 2022",
+    name: "Tanushree",
+    profileImage: "https://media.licdn.com/dms/image/v2/D5603AQHuJ2gSBM7DRA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718797834720?e=1740614400&v=beta&t=RNfjpSAsLRHr7LW6ejyiVR4peoSPm3kSfWV_Rr5OQ0w",
+    image: "https://miro.medium.com/v2/resize:fit:720/format:webp/0*R_k6t_0vTBc9ayPT",
+    blog:"https://medium.com/developer-student-clubs-iiit-allahabad/why-jetpack-datastore-over-sharedpreferences-aefdb2c25cf6",
   },
   {
-    title: "Learn Microinteraction",
-    body: "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Ornare pretium placerat ut platea. Purus blandit integer sagittis massa vel est hac.",
-    date: "May 2 , 2023",
-    name: "Walter white",
-    profileImage: "https://i.pravatar.cc/201",
-    image: "https://picsum.photos/200/300",
+    title: "GSC'24 EcoBloom (Global Top 100)",
+    body: "Discover how Team EcoBloom from IIIT Allahabad, comprising Nijval, Rishika, Rishi, and Vatsal, secured a spot in the global top 100 of the Google Solution Challenge 2024 with their innovative project!  Click to Read more",
+    date: "Oct 15 , 2024",
+    name: "Vatsal Bhuva",
+    profileImage: "https://media.licdn.com/dms/image/v2/D4D03AQGCg-bQLK2x6A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1704564779020?e=2147483647&v=beta&t=-K1jtn1OzaxmEPMP6a4P1dSt-kFBYwZ9ciN5CSwC-t0",
+    image: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*UEGMYX3qyYBo__Q8Mz8sbg.jpeg",
+    blog:"https://medium.com/nybles/google-solution-challenge-2024-ecobloom-global-top-100-d2365f5de060",
   },
   {
-    title: "Learn Microinteraction",
-    body: "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Ornare pretium placerat ut platea. Purus blandit integer sagittis massa vel est hac.",
-    date: "December 4 , 2023",
-    name: "Walter white",
-    profileImage: "https://i.pravatar.cc/203",
-    image: "https://picsum.photos/200/300",
+    title: "Understanding the React Hooks",
+    body:"Explore how React Hooks enable functional components to manage state and lifecycle features, simplifying code and enhancing reusability. Click to Read more" , 
+    date: "Mar 24 , 2022",
+    name: "Mohsin Razae",
+    profileImage: "https://media.licdn.com/dms/image/v2/D5603AQFUVo0tH6MZcA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1697466390332?e=1740614400&v=beta&t=w2izLFZDsz0HeXaRS_oYMffZYp2d_1RB_9ff_60USZE",
+    image: "https://miro.medium.com/v2/resize:fit:720/format:webp/0*ZX5BZ5qWC44gGdOK.png",
+    blog:"https://medium.com/developer-student-clubs-iiit-allahabad/understanding-the-react-hooks-aaa79be9c929",
   },
+  {
+    title: "Hands On Expandable List Views",
+    body:"Learn how to implement Expandable List Views in Android to display hierarchical data efficiently, enhancing user interaction.  Click to Read more" ,
+    date: "Nov 4 , 2020",
+    name: "Pranshu Tripathi",
+    profileImage: "https://media.licdn.com/dms/image/v2/D5603AQHL2R1Z1UyWXQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1719578925844?e=1740614400&v=beta&t=gI9GWlDBv68_PqD_24hbSu_V4NRR6gFokxK_31nUW-g",
+    image: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*sHjIvcJwFQyPZrx3E43Lqg.png",
+    blog:"https://medium.com/developer-student-clubs-iiit-allahabad/hands-on-expandable-list-views-1f9cdecc187b",
+  }
 ];
 
 const responsive = {
@@ -82,23 +96,43 @@ const responsive = {
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
-    items: 2,
+    items: 1,
   },
 };
 
+
+function handleSubmit(url){
+  window.location.href=url
+}
 
 
 function Blogs() {
 	const context = useContext(apiContext);
 	const { data, getAllData, getAttribute, blogs, getAllBlogData, addBlogCard, parameter } = context;
 	let attribute = "blogs";
+
 	useEffect(() => {
-		//getAllData(attribute);
 		getAllBlogData();
 		getAttribute(null);
 	}, [parameter]);
 	console.log(parameter);
+  
 	const [admin, setAdmin] = useState(true);
+
+  const buttonStyle = {
+    backgroundColor: '#0A001E',
+    border: '3px solid #A000F0',
+    color: '#FFFFFF',
+    borderRadius: '4px',
+    padding: '10px 20px',
+    fontSize: '16px',
+    cursor: 'pointer',
+    textAlign: 'center',
+    display: 'inline-block',
+    fontFamily: 'Arial, sans-serif',
+    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+  };
+
 	return (
     <>
       <section
@@ -240,7 +274,7 @@ function Blogs() {
             }}
             className="heading"
           >
-            All Blogs
+            Most Viewed Blogs by GDSC Members :-
           </h2>
         </div>
         <Carousel
@@ -263,7 +297,7 @@ function Blogs() {
           renderDotsOutside={false}
         >
           {postsdata.map((news, index) => (
-            <div>
+            <div  onClick={() => handleSubmit(news.blog)}>
               <Card
                 sx={{
                   maxWidth: 300,
@@ -355,7 +389,21 @@ function Blogs() {
               </Card>
             </div>
           ))}
+          
         </Carousel>
+            <HeadingButton
+            LargeHeading="Want to read all Blogs written by gdsc members?"
+            btnText="Click Here"
+            bg={FormBtnBg}
+            formLink="https://medium.com/developer-student-clubs-iiit-allahabad"
+            />
+            <HeadingButton
+            LargeHeading="Want to get your Blog featured under us?"
+            SmallHeading="Just drop us your Blog Details."
+            btnText="Submit Blog"
+            bg={FormBtnBg}
+            formLink="https://docs.google.com/"
+            />
       </section>
     </>
   );
