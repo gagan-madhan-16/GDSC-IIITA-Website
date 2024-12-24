@@ -402,7 +402,7 @@ function Blogs() {
             SmallHeading="Just drop us your Blog Details."
             btnText="Submit Blog"
             bg={FormBtnBg}
-            formLink="https://docs.google.com/"
+            formLink="https://docs.google.com/forms/d/e/1FAIpQLSdInkvrM-KeM4P3m26wi-x73ftRT8Q32-632aL4yIWBYjfyYw/viewform"
             />
       </section>
     </>

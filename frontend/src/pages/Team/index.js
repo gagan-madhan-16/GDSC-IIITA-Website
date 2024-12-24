@@ -371,7 +371,7 @@ function Team() {
       {/* Dropdown for selecting team wing */}
       <Box sx={{ padding: "2rem", textAlign: "center" }}>
         <Typography variant="h3" sx={{ marginBottom: "1.5rem", fontWeight: "bold" }}>
-          Our Team
+          Our Experts
         </Typography>
 
         {/* Wing selection dropdown */}
